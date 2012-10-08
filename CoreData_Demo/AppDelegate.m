@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RootViewController.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -29,6 +29,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    RootViewController *rootViewController = [[RootViewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
+    self.window.rootViewController = navController;
+    [rootViewController release];
+    [navController release];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -73,17 +80,18 @@
 {
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
-    if (managedObjectContext != nil)
+    if (managedObjectContext != nil)//把上下为你中所做的修改保存到数据库
     {
-        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error])
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error])//如果save:没有正常执行
         {
             /*
              Replace this implementation with code to handle the error appropriately.
              
              abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
              */
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);//打印错误信息
+            abort();//异常终止一个进程。中止当前的过程，返回一个错误代码
+
         } 
     }
 }
@@ -94,14 +102,15 @@
  Returns the managed object context for the application.
  If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
  */
-- (NSManagedObjectContext *)managedObjectContext
+- (NSManagedObjectContext *)managedObjectContext//获取被管理文件上下文
 {
     if (__managedObjectContext != nil)
     {
         return __managedObjectContext;
     }
     
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];//Persistent Store Coordinator 相当于数据文件管理器，处理底层的对数据文件的读取与写入。一般我们无需与它打交道。
+
     if (coordinator != nil)
     {
         __managedObjectContext = [[NSManagedObjectContext alloc] init];
@@ -129,7 +138,8 @@
  Returns the persistent store coordinator for the application.
  If the coordinator doesn't already exist, it is created and the application's store added to it.
  */
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator//获得persistentStoreCoordinator
+
 {
     if (__persistentStoreCoordinator != nil)
     {
@@ -137,7 +147,8 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreData_Demo.sqlite"];
-    
+    //NSURL objects can be used to refer to files, and are the preferred way to do so. ApplicationKit objects that can read data from or write data to a file generally have methods that accept an NSURL object instead of a pathname as the file reference
+    //NSURL对象可以用来表示文件，而且是比较好的方式。处理文件存取的ApplicationKit对象一般都有识别NSURL的对象的方法。
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
@@ -177,7 +188,7 @@
 /**
  Returns the URL to the application's Documents directory.
  */
-- (NSURL *)applicationDocumentsDirectory
+- (NSURL *)applicationDocumentsDirectory//得到应用程序Documents目录
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }

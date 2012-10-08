@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FBCA903160062EF0087BB04 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCA902160062EF0087BB04 /* Icon@2x.png */; };
+		0FBCA905160062F90087BB04 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCA904160062F90087BB04 /* Default@2x.png */; };
+		0FBCA907160063760087BB04 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCA906160063760087BB04 /* Icon.png */; };
+		0FBCA9191600BACE0087BB04 /* EditStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCA9181600BACD0087BB04 /* EditStudentViewController.m */; };
 		0FDCA0CE15FDE7E80060F83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCA0CD15FDE7E80060F83E /* UIKit.framework */; };
 		0FDCA0D015FDE7E80060F83E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCA0CF15FDE7E80060F83E /* Foundation.framework */; };
 		0FDCA0D215FDE7E80060F83E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCA0D115FDE7E80060F83E /* CoreGraphics.framework */; };
@@ -15,21 +19,42 @@
 		0FDCA0DC15FDE7E80060F83E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA0DB15FDE7E80060F83E /* main.m */; };
 		0FDCA0E015FDE7E80060F83E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA0DF15FDE7E80060F83E /* AppDelegate.m */; };
 		0FDCA0E315FDE7E80060F83E /* CoreData_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA0E115FDE7E80060F83E /* CoreData_Demo.xcdatamodeld */; };
+		0FDCA0F615FDE96B0060F83E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCA0F515FDE96B0060F83E /* QuartzCore.framework */; };
+		0FDCA10115FDE9D60060F83E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA10015FDE9D60060F83E /* RootViewController.m */; };
+		0FDCA10415FDE9F90060F83E /* AddStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA10315FDE9F90060F83E /* AddStudentViewController.m */; };
+		0FDCA10715FDEA160060F83E /* DetailedStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA10615FDEA160060F83E /* DetailedStudentViewController.m */; };
+		0FDCA10A15FDEABD0060F83E /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA10915FDEABD0060F83E /* Student.m */; };
+		0FDCA11015FDEF360060F83E /* backg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FDCA10F15FDEF360060F83E /* backg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FBCA902160062EF0087BB04 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0FBCA904160062F90087BB04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0FBCA906160063760087BB04 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0FBCA9171600BACD0087BB04 /* EditStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditStudentViewController.h; sourceTree = "<group>"; };
+		0FBCA9181600BACD0087BB04 /* EditStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditStudentViewController.m; sourceTree = "<group>"; };
 		0FDCA0C915FDE7E80060F83E /* CoreData_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDCA0CD15FDE7E80060F83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FDCA0CF15FDE7E80060F83E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0FDCA0D115FDE7E80060F83E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0FDCA0D315FDE7E80060F83E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		0FDCA0D715FDE7E80060F83E /* CoreData_Demo-Info.plist */ = {isa = PBXFileReference; path = "CoreData_Demo-Info.plist"; sourceTree = "<group>"; };
+		0FDCA0D715FDE7E80060F83E /* CoreData_Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreData_Demo-Info.plist"; sourceTree = "<group>"; };
 		0FDCA0D915FDE7E80060F83E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FDCA0DB15FDE7E80060F83E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0FDCA0DD15FDE7E80060F83E /* CoreData_Demo-Prefix.pch */ = {isa = PBXFileReference; path = "CoreData_Demo-Prefix.pch"; sourceTree = "<group>"; };
-		0FDCA0DE15FDE7E80060F83E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FDCA0DD15FDE7E80060F83E /* CoreData_Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreData_Demo-Prefix.pch"; sourceTree = "<group>"; };
+		0FDCA0DE15FDE7E80060F83E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FDCA0DF15FDE7E80060F83E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0FDCA0E215FDE7E80060F83E /* CoreData_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData_Demo.xcdatamodel; sourceTree = "<group>"; };
+		0FDCA0F515FDE96B0060F83E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0FDCA0FF15FDE9D60060F83E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0FDCA10015FDE9D60060F83E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0FDCA10215FDE9F90060F83E /* AddStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStudentViewController.h; sourceTree = "<group>"; };
+		0FDCA10315FDE9F90060F83E /* AddStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudentViewController.m; sourceTree = "<group>"; };
+		0FDCA10515FDEA160060F83E /* DetailedStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedStudentViewController.h; sourceTree = "<group>"; };
+		0FDCA10615FDEA160060F83E /* DetailedStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedStudentViewController.m; sourceTree = "<group>"; };
+		0FDCA10815FDEABD0060F83E /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		0FDCA10915FDEABD0060F83E /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		0FDCA10F15FDEF360060F83E /* backg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDCA0F615FDE96B0060F83E /* QuartzCore.framework in Frameworks */,
 				0FDCA0CE15FDE7E80060F83E /* UIKit.framework in Frameworks */,
 				0FDCA0D015FDE7E80060F83E /* Foundation.framework in Frameworks */,
 				0FDCA0D215FDE7E80060F83E /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +76,9 @@
 		0FDCA0BE15FDE7E80060F83E = {
 			isa = PBXGroup;
 			children = (
+				0FBCA906160063760087BB04 /* Icon.png */,
+				0FBCA904160062F90087BB04 /* Default@2x.png */,
+				0FBCA902160062EF0087BB04 /* Icon@2x.png */,
 				0FDCA0D515FDE7E80060F83E /* CoreData_Demo */,
 				0FDCA0CC15FDE7E80060F83E /* Frameworks */,
 				0FDCA0CA15FDE7E80060F83E /* Products */,
@@ -67,6 +96,7 @@
 		0FDCA0CC15FDE7E80060F83E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FDCA0F515FDE96B0060F83E /* QuartzCore.framework */,
 				0FDCA0CD15FDE7E80060F83E /* UIKit.framework */,
 				0FDCA0CF15FDE7E80060F83E /* Foundation.framework */,
 				0FDCA0D115FDE7E80060F83E /* CoreGraphics.framework */,
@@ -81,6 +111,8 @@
 				0FDCA0DE15FDE7E80060F83E /* AppDelegate.h */,
 				0FDCA0DF15FDE7E80060F83E /* AppDelegate.m */,
 				0FDCA0E115FDE7E80060F83E /* CoreData_Demo.xcdatamodeld */,
+				0FDCA10815FDEABD0060F83E /* Student.h */,
+				0FDCA10915FDEABD0060F83E /* Student.m */,
 				0FDCA0D615FDE7E80060F83E /* Supporting Files */,
 			);
 			path = CoreData_Demo;
@@ -89,10 +121,19 @@
 		0FDCA0D615FDE7E80060F83E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FDCA10F15FDEF360060F83E /* backg.jpg */,
 				0FDCA0D715FDE7E80060F83E /* CoreData_Demo-Info.plist */,
 				0FDCA0D815FDE7E80060F83E /* InfoPlist.strings */,
 				0FDCA0DB15FDE7E80060F83E /* main.m */,
 				0FDCA0DD15FDE7E80060F83E /* CoreData_Demo-Prefix.pch */,
+				0FDCA0FF15FDE9D60060F83E /* RootViewController.h */,
+				0FDCA10015FDE9D60060F83E /* RootViewController.m */,
+				0FDCA10215FDE9F90060F83E /* AddStudentViewController.h */,
+				0FDCA10315FDE9F90060F83E /* AddStudentViewController.m */,
+				0FDCA10515FDEA160060F83E /* DetailedStudentViewController.h */,
+				0FDCA10615FDEA160060F83E /* DetailedStudentViewController.m */,
+				0FBCA9171600BACD0087BB04 /* EditStudentViewController.h */,
+				0FBCA9181600BACD0087BB04 /* EditStudentViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,6 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FDCA0DA15FDE7E80060F83E /* InfoPlist.strings in Resources */,
+				0FDCA11015FDEF360060F83E /* backg.jpg in Resources */,
+				0FBCA903160062EF0087BB04 /* Icon@2x.png in Resources */,
+				0FBCA905160062F90087BB04 /* Default@2x.png in Resources */,
+				0FBCA907160063760087BB04 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +206,11 @@
 				0FDCA0DC15FDE7E80060F83E /* main.m in Sources */,
 				0FDCA0E015FDE7E80060F83E /* AppDelegate.m in Sources */,
 				0FDCA0E315FDE7E80060F83E /* CoreData_Demo.xcdatamodeld in Sources */,
+				0FDCA10115FDE9D60060F83E /* RootViewController.m in Sources */,
+				0FDCA10415FDE9F90060F83E /* AddStudentViewController.m in Sources */,
+				0FDCA10715FDEA160060F83E /* DetailedStudentViewController.m in Sources */,
+				0FDCA10A15FDEABD0060F83E /* Student.m in Sources */,
+				0FBCA9191600BACE0087BB04 /* EditStudentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +312,7 @@
 				0FDCA0E815FDE7E80060F83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
